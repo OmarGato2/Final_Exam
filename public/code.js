@@ -11,7 +11,7 @@ function displayUnicorn() {
     jQuery("#right").empty()
     to_add = ""
     $["ajax"] ({
-        url: "https://tranquil-escarpment-21127.herokuapp.com/displayUnicorns" + this["id"],
+        url: "https://pacific-chamber-40829.herokuapp.com/displayUnicorns" + this["id"],
         type: "POST",
         data: {
             "allUnicorns": $("#allUnicorns").val()
@@ -26,7 +26,7 @@ function allUnicorns() {
 
     $.ajax(
         {
-            url: "https://tranquil-escarpment-21127.herokuapp.com/allUnicorns",
+            url: "https://pacific-chamber-40829.herokuapp.com/allUnicorns",
             type: "POST",
             data: {
                 "allUnicorns": $("#allUnicorns").val()
