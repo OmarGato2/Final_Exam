@@ -1,0 +1,24 @@
+{
+  "name": "final_exam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmarGato2/Final_Exam.git"
+  },
+  "author": "Omar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OmarGato2/Final_Exam/issues"
+  },
+  "homepage": "https://github.com/OmarGato2/Final_Exam#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongoose": "^6.2.11"
+  }
+}
