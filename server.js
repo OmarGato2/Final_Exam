@@ -16,8 +16,11 @@ app.use(bodyparser.urlencoded({
 
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://user:bcitcomp1537@cluster0.gtlxy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+// mongoose.connect("mongodb+srv://user:bcitcomp1537@cluster0.gtlxy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+// { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://nabil828:comp1537@cluster0.lbm8g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
     { useNewUrlParser: true, useUnifiedTopology: true });
+
 const unicornSchema = new mongoose.Schema({
     name: String,
     weight: Number,
@@ -27,11 +30,11 @@ const unicornModel = mongoose.model("unicorns", unicornSchema);
 
 
 
-app.post("/getAllUnicorns", function (req, res) {
+app.post("/allUnicorns", function (req, res) {
     console.log("req. has been recieved")
     console.log(req.body.allUnicorns)
 
-    unicornModel.find({ name: req.body.allUnicorns }, function (err, unicorns) {
+    unicornModel.find({}, function (err, unicorns) {
         if (err) {
             console.log("Error " + err);
         } else {
