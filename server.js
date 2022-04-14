@@ -16,10 +16,10 @@ app.use(bodyparser.urlencoded({
 
 const mongoose = require('mongoose');
 
-mongoose.connect("mongodb+srv://user:bcitcomp1537@cluster0.gtlxy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-{ useNewUrlParser: true, useUnifiedTopology: true });
-// mongoose.connect("mongodb+srv://nabil828:comp1537@cluster0.lbm8g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-//     { useNewUrlParser: true, useUnifiedTopology: true });
+// mongoose.connect("mongodb+srv://user:bcitcomp1537@cluster0.gtlxy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+// { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://nabil828:comp1537@cluster0.lbm8g.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    { useNewUrlParser: true, useUnifiedTopology: true });
 
 const unicornSchema = new mongoose.Schema({
     name: String,
