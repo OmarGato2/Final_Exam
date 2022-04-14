@@ -5,7 +5,7 @@ function process_res(data) {
     console.log(data)
 
     for (i = 0; i < data.length; i++) {
-        $("#result").append(make_unicorn_button(data[i]) + "<br>");
+        $("#result").append(`<ol></ol>` + make_unicorn_button(data[i]) + "<br>");
     }
 }
 
@@ -23,7 +23,7 @@ function allUnicorns() {
     console.log($("#allUnicorns").val())
     $.ajax(
         {
-            url: "/allUnicorns",
+            url: "https://pacific-chamber-40829.herokuapp.com/allUnicorns",
             type: "POST",
             data: {
                 "allUnicorns": $("#allUnicorns").val()

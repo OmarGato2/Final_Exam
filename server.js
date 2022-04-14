@@ -30,7 +30,7 @@ const unicornModel = mongoose.model("unicorns", unicornSchema);
 
 
 
-app.post("/allUnicorns", function (req, res) {
+app.post("https://pacific-chamber-40829.herokuapp.com/allUnicorns", function (req, res) {
     console.log("req. has been recieved")
     console.log(req.body.allUnicorns)
 
