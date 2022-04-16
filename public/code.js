@@ -5,13 +5,13 @@ function process_res(data) {
     console.log(data)
 
     for (i = 0; i < data.length; i++) {
-        $("#result").append(`<ol></ol>` + make_unicorn_button(data[i]) + "<br>");
+        $("#result").append(make_unicorn_button(data[i]) + "<br>");
     }
 }
 
 function displayUnicorn(unicorn) {
     unicorn = JSON.parse(unicorn)
-    $("#right").append() = `<ul><li>test</li></ul>`
+    $("#right").append(make_unicorn_button(unicorn[i]) + "<br>") = `<ul><li>test</li></ul>`
 }
 
 function make_unicorn_button(unicorn) {
@@ -23,7 +23,7 @@ function allUnicorns() {
     console.log($("#allUnicorns").val())
     $.ajax(
         {
-            url: "https://pacific-chamber-40829.herokuapp.com/allUnicorns",
+            url: "/allUnicorns",
             type: "POST",
             data: {
                 "allUnicorns": $("#allUnicorns").val()
